@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+      *{
+          color: white;
+      }
+         body{
+               background: linear-gradient(to right,red,white,blue);         
+ 
+         }
+             #box{
+                  width: 600px;
+                  margin: auto;
+                  border: 12px solid cyan;
+                  background-color: black;
+                  height: 300px;
+                  border-radius: 10px;
+                  margin-top: 100px;
+                  font-size: 30px;
+
+                }
+
+                th{
+                  border: 2px solid  rgb(208, 139, 139);
+                  color: red;
+                }
+                H2{
+                  color: rgb(6, 2, 243);
+                  font-size: 30px;
+                  text-align: center;                  
+                  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+    </style>
+    <script>
+       function demo()
+        {
+          month=["JAN","FAB","MARCH","APRIL","MAY","JUNE","july","AUG","SEP","OCT","NOV","DEC"]  // this is a array
+          day=["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+          d=new Date();
+           a=d.getDate();
+           a=a<=9?"0"+a:a;
+           b=d.getMonth()
+           c=d.getFullYear();
+           e=d.getDay();
+
+           x=d.getHours();
+           x=x<=9?"0"+x:x;
+
+           y=d.getMinutes();
+           y=y<=9?"0"+y:y;
+           
+           z=d.getSeconds();
+           z=z<=9?"0"+z:z;
+
+           if(x<=12)
+             u="AM";
+             else
+             u="PM";
+           d=x+" : "+y+" : "+z+" "+u;
+
+           document.getElementById("a").innerHTML=a;
+           document.getElementById("b").innerHTML=month[b];
+           document.getElementById("c").innerHTML=c;
+           document.getElementById("d").innerHTML=d;
+           document.getElementById("e").innerHTML=day[e];
+
+           setTimeout(demo,1000);
+           
+        }
+    </script>
+</head>
+<body onload="demo();">
+    <i><h2>DIGITAL TIME ZONE </h2></i>
+    <div id="box">
+      <table width="80%" align="center" cellpadding="10px" border="0px" cellspacing="40px">
+        <tr>
+             <th id="a"></th>
+             <th id="b"></th>
+             <th id="c"></th>
+
+        </tr>
+
+        <tr>
+          <th id="d" colspan="3"></th>
+        </tr>
+
+        <tr>
+          <th id="e"></th>
+          <th id="f" colspan="2">26</th>
+          
+        </tr>
+      </table>
+    </div>
+</body>
+</html>

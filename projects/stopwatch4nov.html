@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      body{
+         background: linear-gradient(to right,yellow,orange,red);
+      }
+#box{
+    background-color: black;
+    width: 500px;
+    
+    border-radius: 50%;
+    margin: auto;
+    border: 4px dotted greenyellow;
+    height: 500px;
+    box-shadow: 1px 1px 40px 4px cyan;
+}
+.a{
+   font-size: 60px;
+   box-shadow: 1px 1px 2px 1px yellow;
+   color: wheat;
+}
+h3{
+ text-align: center;
+ font-size: 35px;
+}
+.btn{
+   margin-top: 40px;
+   margin-left: 50px;
+   border-radius: 20px;
+   cursor: pointer;
+   color: goldenrod;
+   background-color: black;
+}
+.btn:hover{
+   background-color: rgb(205, 77, 18);
+   border: 1px solid green;
+   color: black;
+   box-shadow: 1px 1px 30px 4px cyan;
+
+}
+   </style>
+</head>
+<script>
+   window.onload=function()
+   {
+      var m=00;
+      var s=00;
+      var ns=00;
+      var i;
+      a=document.getElementById("min");
+      b=document.getElementById("sec");
+      c=document.getElementById("nsec");
+      x=document.getElementById("bstart");
+      y=document.getElementById("bstop");
+      z=document.getElementById("breset");
+      x.onclick=function()
+      {
+         i=setInterval(timer,10);
+      }
+      y.onclick=function()
+      {
+         clearInterval(i);
+      }
+      z.onclick=function()
+      {
+         m="00";
+         s="00";
+         ns="00";
+         a.innerHTML=m;
+         b.innerHTML=s;
+         c.innerHTML=ns;
+      }
+      function  timer()
+      {
+         ns++;  // ns=ns+1;
+         if(ns<=9)
+         c.innerHTML="0"+ns;
+         if(ns>9 && ns<=99)
+         c.innerHTML=ns;
+         if(ns>99)
+         {
+            s++;
+            if(s<=9)
+            b.innerHTML="0"+s;
+            else
+            b.innerHTML=s;
+            ns=0;
+            c.innerHTML="0"+ns;
+         }
+         if(s>59)
+         {
+            m++;
+            if(m<=9)
+            a.innerHTML="0"+m;
+            else
+            a.innerHTML=m;
+            s=0;
+            b.innerHTML="0"+s;
+         }
+         
+      }
+   }		
+</script>
+<body>
+   <h3 style="color: blue">Stop <span style="color: green;">Watch</span></h3>
+    <div id="box">
+<table align="center",width="35%" cellpadding="10px" border="0px" style="margin-top: 150px; color: cyan; ">
+   <tr>
+      <th colspan="4">EXTECH</th>
+   </tr>
+   <tr class="a">
+      <th id="hours">00</th>
+      <th id="min">00</th>
+      <th id="sec">00</th>
+      <th id="nsec">00</th>
+
+   </tr>
+   <tr>
+      <th><input type="button"  class="btn" value="Start" id="bstart" ></th>
+      <th><input type="button" class="btn" value="Stop" id="bstop" ></th>
+      <th><input type="button" class="btn" value="Reset" id="breset" ></th>
+   </tr>
+</table>
+      
+   </div>
+</body>
+</html>

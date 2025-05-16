@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    float: left;
+    text-align: right;
+    font-size: 30px;
+    opacity: 0.5;
+    background-attachment: fixed;
+}
+.navbar a{
+    
+    text-decoration:none; 
+    padding: 5px;
+    margin-left: 40px;
+    color: rgb(181, 130, 33);
+}
+.navbar a:hover{
+    
+    text-decoration:none; 
+    padding: 5px;
+    margin-left: 40px;
+    border-bottom: 4px solid rgb(221, 83, 33);
+    color: rgb(181, 130, 33);
+}
+
+.container{
+    background-image: url(antique-cafe-bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80em;
+    background-attachment: fixed;
+    
+}
+.box{
+    background-color: black;
+    width: 430px;
+    height: 12em;
+    text-align: center;
+    margin-left: 400px;
+    color: white;
+    opacity:0.7;
+    background-attachment: scroll;
+    padding: 20px;
+    
+}
+.box h2{
+    font-size: 40px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-attachment: fixed;
+        
+}
+.box h3{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    
+}
+
+.box1{
+    background-color: black;
+    width: 430px;
+    height: 35em;
+    padding: 30px;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity:0.7;
+    text-align: left;list-style: none;
+    margin-left: 400px;
+    color: white;
+    background-attachment: scroll;
+    
+}
+.box1 h3{
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+.btn{
+    background-color: rgb(13, 13, 13);
+    width: 260px;
+    border-radius: 10px;
+    height: 6em;
+    padding: 25px;
+    opacity:0.8;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-left: 470px;
+    color: rgb(219, 83, 10);
+
+}
+
+.btn:hover{
+    background-color: rgb(13, 13, 13);
+    width: 260px;
+    border-radius: 10px;
+    height: 6em;
+    padding: 25px;
+    opacity:0.8;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-left: 470px;
+    color: rgb(243, 242, 241);
+
+}
+.container1{
+    background-image: url(antique-cafe-bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 50px;
+    height: 80em;
+    background-attachment: fixed;
+}
+.container1 h1{
+    background-color: aliceblue;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}
+.card{
+    width: 40%;
+    float: left;
+    background-attachment: fixed;
+    height: 700px;
+    margin: 50px;
+    margin-left: 70px;
+    border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgb(49, 24, 24);
+}
+.tab{
+    margin-left: 20px;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container3{
+    background-image: url(antique-cafe-bg-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80em;
+    background-attachment: fixed;
+
+}
+.about{
+    width: 40%;
+    background-color: rgb(250, 248, 245);
+    margin-left: 700px;
+    border-radius: 20px;
+    height: 20em;
+    opacity: 0.7;
+   font-size: 20px;   
+   padding: 10px;
+   padding-top: 40px;
+}
+.btn2{
+    width: 15%;
+    height: 10vh;
+    margin-left: 700px;
+    margin-top: 40px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(37, 213, 154);
+}
+.btn2:hover{
+    width: 15%;
+    height: 10vh;
+    margin-left: 700px;
+    margin-top: 40px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(11, 180, 121);
+
+}
+.container4{
+    background-image: url(antique-cafe-bg-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80em;
+    background-attachment: fixed;
+
+}
+.contactUs{
+    width: 40%;
+    background-color: rgb(250, 248, 245);
+    border-radius: 20px;
+    height: 27em;
+    opacity: 0.7;
+   font-size: 20px;   
+   padding: 40px;
+   padding-top: 40px;
+   float: left;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin: 50px;
+
+}
+.map{
+    width: 40%;
+    border-radius: 10px;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(2, 66, 109);
+    margin-left: 120px;
+    padding: 20px;
+}
+
+.loginpage{
+    width: 40%;
+    background-color: rgb(7, 7, 6);
+    border-radius: 20px;
+    height: 27em;
+    opacity: 0.7;
+   font-size: 20px;   
+   padding: 40px;
+   padding-top: 40px;
+   float: left;
+   margin: 50px;
+   margin-left: 100px;
+
+}
+#name{
+    display: block;
+    font-size: 20px;
+    border-bottom: 4px solid orangered;
+    padding: 10px;
+    width: 90%;
+    color: white;
+    background: transparent;
+
+}
+#name:hover{
+    display: block;
+    font-size: 20px;
+    border-bottom: 4px solid orangered;
+    padding: 10px;
+    width: 90%;
+    color: white;
+    background: transparent;
+    box-shadow: 1px 1px 7px rgb(242, 163, 4);
+
+}
+
+#mail{
+    display: block;
+    color: white;
+    font-size: 20px;
+    border-bottom: 4px solid orangered;
+    padding: 10px;
+    width: 90%;
+    background: transparent;
+
+}
+#mail:hover{
+    display: block;
+    color: white;
+    font-size: 20px;
+    border-bottom: 4px solid orangered;
+    padding: 10px;
+    width: 90%;
+    background: transparent;
+    box-shadow: 1px 1px 7px rgb(242, 163, 4);
+
+}
+
+#msg{
+    display: block;
+    color:white;
+    border-bottom: 4px solid orangered;
+    padding: 10px;
+    width: 90%;
+    font-size: 20px;
+    background: transparent;
+
+}
+#msg:hover{
+    display: block;
+    color:white;
+    border-bottom: 4px solid orangered;
+    padding: 10px;
+    width: 90%;
+    font-size: 20px;
+    background: transparent;
+    box-shadow: 1px 1px 7px rgb(242, 163, 4);
+
+}
+span{
+    margin-bottom: 10%;
+}
+.item{
+    transition: transform 2s;
+
+    
+}
+.item:hover{
+   transform: scale(0.9);
+}
+
+.item1{
+    animation: text 2s infinite;
+}
+@keyframes text {
+    0%{
+        opacity: 0.3;
+        color: aqua;
+    }
+    100%{
+        opacity: 0.8;
+        background-color: rgb(225, 219, 217);
+    }
+}
